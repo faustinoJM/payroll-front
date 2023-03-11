@@ -1,6 +1,7 @@
 import Navbar from "../../components/navbar/Navbar"
 import Sidebar from "../../components/sidebar/Sidebar"
 import "./home.scss"
+import Sticky from 'react-stickynode';
 
 const Home = () => {
     return (

@@ -24,6 +24,7 @@
     "react-hook-form": "^7.43.1",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
+    "react-stickynode": "^4.1.0",
     "react-to-print": "^2.14.12",
     "recharts": "^2.3.2",
     "sass": "^1.58.0",
