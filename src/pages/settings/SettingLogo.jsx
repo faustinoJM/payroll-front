@@ -7,6 +7,7 @@ import DriveFolderUploadOutlinedIcon from '@mui/icons-material/DriveFolderUpload
 import api from "../../services/api";
 import { useFormik } from "formik"
 import * as Yup from "yup"
+import { Link } from "react-router-dom";
 
 
 const SettingLogo = () => {
@@ -50,9 +51,9 @@ const SettingLogo = () => {
                     {/* Settings
                     <DatePicker className="datas" selected={startDate} onChange={(date) => setStartDate(date)}/> */}
                     <ul>
-                    <li><a href="../settings">Dados da Empresa</a></li>
-                        <li><a >Titulo e Logo</a></li>
-                        <li><a href="payroll">Folha de Salario</a></li>
+                        <li><Link className="a" to="..">Dados da Empresa</Link></li>
+                        <li><Link className="b" >Titulo e Logo</Link></li>
+                        <li><Link className="a" to="../payroll">Folha de Salario</Link></li>
                     </ul>
                 </div>
                 <form onSubmit={handleSubmit}>

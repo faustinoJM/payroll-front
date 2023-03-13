@@ -6,6 +6,7 @@ import DatePicker from "react-datepicker";
 import api from "../../services/api";
 import { useFormik } from "formik"
 import * as Yup from "yup"
+import { Link } from "react-router-dom";
 
 const SettingPayroll = () => {
     const [startDate, setStartDate] = useState(new Date());
@@ -52,9 +53,9 @@ const SettingPayroll = () => {
                     {/* Settings
                     <DatePicker className="datas" selected={startDate} onChange={(date) => setStartDate(date)}/> */}
                     <ul>
-                        <li><a href="../settings">Dados da Empresa</a></li>
-                        <li><a href="logo">Titulo e Logo</a></li>
-                        <li><a >Folha de Salario</a></li>
+                        <li><Link className="a" to="..">Dados da Empresa</Link></li>
+                        <li><Link className="a" to="../logo">Titulo e Logo</Link></li>
+                        <li><Link className="b" >Folha de Salario</Link></li>
                     </ul>
                 </div>
                 <form onSubmit={handleSubmit}>
